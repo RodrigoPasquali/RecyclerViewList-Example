@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Telynet</string>
+    <string name="orden_asc">Orden A-Z</string>
+    <string name="orden_des">Orden Z-A</string>
+    <string name="client_name">Nombre:</string>
+    <string name="client_code">Codigo:</string>
+    <string name="client_tel">Tel:</string>
+    <string name="client_email">Email:</string>
+    <string name="client_visit">Visitado:</string>
+    <string name="order_by">Ordenar por:</string>
+    <string name="code">codigo</string>
+    <string name="name">nombre</string>
+</resources>
