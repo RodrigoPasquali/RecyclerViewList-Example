@@ -22,7 +22,7 @@
             android:layout_marginLeft="@dimen/button_margin"/>
 
         <Spinner
-            android:id="@+id/spinner_order"
+            android:id="@+id/spinner_sort"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
@@ -39,7 +39,7 @@
         android:weightSum="2">
 
         <Button
-            android:id="@+id/btn_ascending_order"
+            android:id="@+id/btn_ascending_sort"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/button_margin"
@@ -48,7 +48,7 @@
             android:text="@string/orden_asc" />
 
         <Button
-            android:id="@+id/btn_descending_order"
+            android:id="@+id/btn_descending_sort"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/orden_des"
@@ -117,5 +117,7 @@
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 </LinearLayout>

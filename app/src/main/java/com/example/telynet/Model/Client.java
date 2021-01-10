@@ -12,7 +12,7 @@ public class Client {
         this.code = code;
         this.phone = phone;
         this.email = email;
-        this.visit = visit;
+        this.visit = visit.toUpperCase();
     }
 
     public String getName() {

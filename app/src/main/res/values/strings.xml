@@ -10,4 +10,6 @@
     <string name="order_by">Ordenar por:</string>
     <string name="code">codigo</string>
     <string name="name">nombre</string>
+    <string name="visit_yes">SI</string>
+    <string name="visit_no">NO</string>
 </resources>
