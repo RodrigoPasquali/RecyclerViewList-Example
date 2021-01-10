@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black_2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
+        android:background="@color/black_2"
         android:weightSum="2">
 
         <Button
@@ -63,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
+        android:background="@color/black_2"
         android:weightSum="2">
 
         <TextView

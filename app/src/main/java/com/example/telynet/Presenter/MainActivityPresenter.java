@@ -1,6 +1,7 @@
 package com.example.telynet.Presenter;
 
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -54,6 +55,10 @@ public class MainActivityPresenter implements MainActivityPresenterInterface, Ad
         spinnerAction();
 
         firstTime = false;
+
+        view.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0X131313));
+        view.getSupportActionBar().setDisplayShowTitleEnabled(false);
+        view.getSupportActionBar().setDisplayShowTitleEnabled(true);
     }
 
     private void generateClientListExample() {
