@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.MainActivity"
+    android:background="@color/black"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,6 +18,7 @@
             android:layout_height="match_parent"
             android:text="@string/order_by"
             android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_gravity="center_vertical"
             android:gravity="center_vertical"
             android:layout_marginLeft="@dimen/button_margin"/>
@@ -68,6 +70,7 @@
             android:layout_height="wrap_content"
             android:text="Visitado: "
             android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"/>
@@ -84,12 +87,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Si"
+                android:textColor="@color/white"
                 android:layout_weight="1"/>
             <RadioButton
                 android:id="@+id/rb_visit_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
+                android:textColor="@color/white"
                 android:layout_weight="1"/>
 
             <RadioButton
@@ -97,10 +102,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Todos"
+                android:textColor="@color/white"
                 android:layout_weight="1"/>
         </RadioGroup>
-
-
     </LinearLayout>
 
     <LinearLayout

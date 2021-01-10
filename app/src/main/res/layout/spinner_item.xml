@@ -8,4 +8,5 @@
     android:textSize="15sp"
     android:gravity="left"
     android:textColor="#FFFFFF"
+    android:background="@color/black"
     android:padding="5dip" />
