@@ -42,6 +42,8 @@ public class MainActivityPresenter implements MainActivityPresenterInterface, Ad
         this.mainActivityView = view;
         this.context = context;
 
+        changeColorActionBar();
+
         generateClientListExample();
         filterClients = clients;
         codeString = context.getString(R.string.code);
@@ -55,10 +57,12 @@ public class MainActivityPresenter implements MainActivityPresenterInterface, Ad
         spinnerAction();
 
         firstTime = false;
+    }
 
-        view.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0X131313));
-        view.getSupportActionBar().setDisplayShowTitleEnabled(false);
-        view.getSupportActionBar().setDisplayShowTitleEnabled(true);
+    private void changeColorActionBar(){
+        mainActivityView.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0XFF0E0E0E));
+        mainActivityView.getSupportActionBar().setDisplayShowTitleEnabled(false);
+        mainActivityView.getSupportActionBar().setDisplayShowTitleEnabled(true);
     }
 
     private void generateClientListExample() {
@@ -94,7 +98,7 @@ public class MainActivityPresenter implements MainActivityPresenterInterface, Ad
     private void spinnerAction() {
         String[] ordersList = new String[] {codeString, nameString};
         ArrayAdapter arrayAdapterSpinner = new ArrayAdapter(context , R.layout.spinner_item, ordersList);
-        arrayAdapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        arrayAdapterSpinner.setDropDownViewResource(R.layout.spinner_dropdown);
         sortSpinner = mainActivityView.findViewById(R.id.spinner_sort);
         sortSpinner.setOnItemSelectedListener(this);
         sortSpinner.setAdapter(arrayAdapterSpinner);
